@@ -281,7 +281,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
-
+//获取文件名称
     public  String getFileName(String pathandname){
         int  start=pathandname.lastIndexOf( "/" );
         int  end=pathandname.lastIndexOf( "." );
