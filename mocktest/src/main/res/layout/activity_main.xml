@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+<!--    <com.example.mocktest.MyTextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:text="@string/strings"-->
+<!--        android:textStyle="italic"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:textColor="#FF000000"-->
+<!--        android:background="#00000000"-->
+<!--        android:shadowColor="#ffff0000"-->
+<!--        android:shadowRadius="3.0"-->
+<!--        android:shadowDx="10.0"-->
+<!--        android:shadowDy="10.0"-->
+<!--        android:singleLine="true"-->
+<!--        android:ellipsize="marquee"-->
+<!--        android:marqueeRepeatLimit="marquee_forever"-->
+<!--        android:focusableInTouchMode="true"-->
+<!--        android:focusable="true">-->
+<!--    </com.example.mocktest.MyTextView>-->
+<!--<Button-->
+<!--    android:id="@+id/btn"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:text="我是按钮"-->
+<!--    android:background="@drawable/btn_background_selector"-->
+<!--    android:backgroundTint="@color/btn_color_selector"-->
+<!--    android:visibility="gone"/>-->
+
+<!--<EditText-->
+<!--    android:layout_width="200dp"-->
+<!--    android:layout_height="100dp"-->
+<!--    android:hint="请输入内容"-->
+<!--    android:drawableLeft="@drawable/main"-->
+<!--    android:drawablePadding="20dp"-->
+<!--    android:paddingLeft="20dp"-->
+<!--    android:visibility="gone"/>-->
+<!--    <ProgressBar-->
+<!--        android:id="@+id/pb1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"/>-->
+<!--<Button-->
+<!--    android:id="@+id/btn_pb1"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:text="显示与隐藏进度条"-->
+<!--    android:onClick="goneAndVisClick"/>-->
+<!--    <ProgressBar-->
+<!--        android:id="@+id/pb2"-->
+<!--        style="?android:attr/progressBarStyleHorizontal"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:indeterminate="true"-->
+<!--        android:max="100"-->
+<!--        />-->
+<!--    <Button-->
+<!--        android:id="@+id/btn_pb2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="模拟下载"-->
+<!--        android:onClick="loadClick"-->
+<!--        />-->
+
+
+
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="发送通知"-->
+<!--        android:onClick="sendClick"-->
+<!--        android:visibility="gone"-->
+<!--        android:id="@+id/btn_sendnotificaiton"/>-->
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="取消通知"-->
+<!--        android:visibility="gone"-->
+<!--        android:onClick="chanelCLick"-->
+<!--        android:id="@+id/btn_chanel"/>-->
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/toolbar1"
+            android:background="#ffff00"
+            app:navigationIcon="@drawable/btn_two_back"
+            app:title="标题"
+            app:subtitle="子标题"
+            app:titleTextColor="#ff00ff00"
+            app:subtitleTextColor="#ffff0000"
+            app:logo="@mipmap/ic_launcher"
+            app:titleMarginStart="90dp"
+            />
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#ffff00"
+        android:id="@+id/toolbar2"
+        android:layout_marginTop="10dp"/>
+<androidx.appcompat.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="#ffff00"
+    app:navigationIcon="@drawable/btn_two_back"
+    android:layout_marginTop="10dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="标题3"
+        android:textColor="#ff00ff00"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_gravity="center"/>
+</androidx.appcompat.widget.Toolbar>
+
+</LinearLayout>

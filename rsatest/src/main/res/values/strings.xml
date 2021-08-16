@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RsaTest</string>
+    <string name="publicKey">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlYIwxN8f77oZlXBOuhzj+qym8NckvFLJPhtihMLL0xEpwQqK8zvOv7DwUwcfW/JrKBG/oOZbPW6OAUjsWQTBp8imJlA43rTMXTPsAwTllM2aGZdWXw2sYsgaq9864b8KjTuXCSewUWZJoQ3aAgoJDLSOpP7SOd/fpcLc/AjXzCB2auYRR4G3+W+39akGwHOqvnQzz2dwzlekhVtkywfLzt0nll8W4CkGEI+pq9Gy5R5XViJsvj7tLCy3DtBWHcKT0/WmoEOojqESjsY09SWWOKG+KjJfrABWJK4r1OcVrGWUkr/VRhpDGzPXD9LiU05efayK6BHJsX5RMBDkIZDlHQIDAQAB</string>
+</resources>

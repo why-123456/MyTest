@@ -1,0 +1,5 @@
+rootProject.name = "MyTest"
+include ':app'
+include ':mocktest'
+include ':rsatest'
+include ':gitdemo'

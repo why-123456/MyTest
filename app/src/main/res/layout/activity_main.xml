@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:windowSoftInputMode="adjustPan"
+    tools:context=".MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/title_Include"
+        layout="@layout/base_tittler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/mygrey"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:id="@+id/txt_phone"
+            android:layout_width="90dp"
+            android:layout_height="15dp"
+            android:text="手机号码(必填)"
+            android:textColor="#ffa1a1a1"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:layout_below="@id/title_Include"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="15dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_bg">
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="请输入手机号码"
+                android:background="@drawable/input_bg"
+                android:textColorHint="#ffa1a1a1"
+                android:textSize="15sp"
+                android:layout_margin="15dp"
+                android:gravity="center_vertical"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/txt_emil"
+            android:layout_width="100dp"
+            android:layout_height="15dp"
+            android:text="联系邮箱（必填）"
+            android:textColor="#ffa1a1a1"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="15dp"
+            />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/input_bg">
+                <EditText
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/input_bg"
+                    android:hint="请输入您的邮箱账号"
+                    android:textColorHint="#ffa1a1a1"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"
+                    android:layout_margin="15dp"/>
+            </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"/>
+    </LinearLayout>
+    <include
+        android:id="@+id/content_include"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/content_description_activity"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/mygrey"
+        android:layout_marginTop="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_bg"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="186dp"
+            android:layout_height="20dp"
+            android:text="提供图片（选填，最多三张）"
+            android:textColor="#ff6f6f6f"
+            android:textSize="14sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:textStyle="bold"
+            />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <GridView
+                android:id="@+id/add_pic"
+                android:layout_width="200dp"
+                android:layout_height="fill_parent"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/input_bg"
+                android:minHeight="56dp"
+                android:scrollbars="none"
+                android:layout_margin="10dp"
+                android:visibility="gone"
+                android:gravity="fill_horizontal"
+                android:stretchMode="columnWidth"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/btn_add_pic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_add_pic"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/add_picture_bg"
+                android:foreground="@mipmap/add"
+                android:foregroundGravity="center"
+                app:backgroundTint="#EFEFEF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/add_pic"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mygrey">
+
+        <Button
+            android:id="@+id/btn_commit"
+            style="@android:style/Widget.Button"
+            android:layout_width="345dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_commit_bg"
+            android:backgroundTint="#fff9d22e"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="#ffffffff"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:backgroundTint="#F9D22E"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
